@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Pathalum</title>
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <li class="nav-item navbar-brand">
+              <img src="assets/logo/SMKN4.svg" alt="" width="60" height="60" class="smkn4">
+              SMK NEGERI 4 BANDUNG
+            </li>
+            <!-- <li class="nav-item">
+              <form class="search">
+                <input class="" type="search" name="search" id="search" placeholder="Search">
+                <button class="search-btn" type="submit"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+                </button>
+              </form>
+            </li> -->
+        </ul>
+    </div>
+
+    <!-- <div class="sidebar">
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li class="dashboard-sidebar active">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer" viewBox="0 0 16 16">
+              <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+              <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+            </svg>
+            </a>
+          </li>
+
+          <li class="postingan-sidebar">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-receipt-cutoff" viewBox="0 0 16 16">
+              <path d="M3 4.5a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zM11.5 4a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1zm0 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+              <path d="M2.354.646a.5.5 0 0 0-.801.13l-.5 1A.5.5 0 0 0 1 2v13H.5a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H15V2a.5.5 0 0 0-.053-.224l-.5-1a.5.5 0 0 0-.8-.13L13 1.293l-.646-.647a.5.5 0 0 0-.708 0L11 1.293l-.646-.647a.5.5 0 0 0-.708 0L9 1.293 8.354.646a.5.5 0 0 0-.708 0L7 1.293 6.354.646a.5.5 0 0 0-.708 0L5 1.293 4.354.646a.5.5 0 0 0-.708 0L3 1.293 2.354.646zm-.217 1.198.51.51a.5.5 0 0 0 .707 0L4 1.707l.646.647a.5.5 0 0 0 .708 0L6 1.707l.646.647a.5.5 0 0 0 .708 0L8 1.707l.646.647a.5.5 0 0 0 .708 0L10 1.707l.646.647a.5.5 0 0 0 .708 0L12 1.707l.646.647a.5.5 0 0 0 .708 0l.509-.51.137.274V15H2V2.118l.137-.274z"/>
+            </svg>
+          </a>
+          </li>
+
+          <li class="alumni-sidebar">
+            <a href="#alumni-submenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+              <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+              <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+            </svg>
+            <ul class="collapse list-unstyled" id="alumni-submenu">
+              <li>
+                <a href="#">Form Alumni</a>
+              </li>
+
+              <li>
+                <a href="#">Data Alumni</a>
+              </li>
+            </ul>
+            </a>
+          </li>
+
+          <li class="sekolah-sidebar">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+              <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+            </svg>
+          </a>
+          </li>
+
+          <li class="profile-sidebar">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            </svg>
+            </a>
+          </li>
+
+          <li class="logout-sidebar">
+            <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+              <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div> -->
+  
+
+    <div class="main-container">
+        <form class="box-form">
+            <h3 class="form-title">Form Pendataan Alumni SMK Negeri 4 Bandung</h3>
+            <hr/>
+            <h6>Bidang yang ditandai dengan <span id="wajib">*</span> wajib diisi</h6>
+            <label for="name" id="name-label">
+              Nama Lengkap<span id="wajib">*</span>
+              <input type="text" id="name" placeholder="Masukkan nama lengkap" required />
+            </label>
+      
+            <label for="date" id="date-label">
+              Tanggal Lahir<span id="wajib">*</span>
+              <input type="date" id="date" placeholder="Masukkan tanggal lahir anda" required />
+            </label>
+      
+            <label for="alamat" id="alamat-label">
+              Alamat<span id="wajib">*</span>
+              <input type="text" id="alamat" placeholder="Masukkan alamat anda" />
+            </label>
+            
+            <label for="jurusan" id="jurusan-label">
+              Jurusan<span id="wajib">*</span>
+              <select id="jurusan">
+                <option selected>Silakan Pilih Jurusan Anda</option>
+                <option value="MM">Multimedia</option>
+                <option value="RPL">Rekayasa Perangkat Lunak</option>
+                <option value="TKJ">Teknik Komputer dan Jaringan</option>
+                <option value="TEAV">Teknik Elektronika Audio dan Video</option>
+                <option value="TITL">Teknik Instalasi Tenaga Listrik</option>
+                <option value="TOI">Teknik Otomasi Industri</option>
+              </select>
+            </label>
+            
+            <label for="tahun" id="tahun-label">
+              Tahun Lulus<span id="wajib">*</span>
+              <input type="text" id="tahun" placeholder="Masukkan tahun anda lulus. Contoh: 2021" required />
+            </label>
+
+            <label for="email" id="email-label">
+              Email<span id="wajib">*</span>
+              <input type="email" id="email" placeholder="Masukkan email anda" required />
+            </label>
+
+            <label for="telp" id="telp-label">
+              Nomor Telepon<span id="wajib">*</span>
+              <input type="text" id="telp" placeholder="Masukkan nomor telepon atau nomor Whatsapp anda" required />
+            </label>
+
+            <label for="status" id="status-label">
+              Status<span id="wajib">*</span>
+              <select id="status">
+                <option selected>Silakan Pilih Status Anda Saat Ini</option>
+                <option value="bekerja">Bekerja</option>
+                <option value="kuliah">Kuliah</option>
+                <option value="wirausaha">Wirausaha</option>
+              </select>
+            </label>
+
+            <label for="nama-status" id="nama-status-label">
+              Nama Perusahaan / Universitas / Wirausaha
+              <input type="text" id="nama-status" placeholder="Masukkan nama perusahaan / universitas / wirausaha anda" required />
+            </label>
+
+            <label for="alamat-status" id="alamat-status-label">
+              Alamat Perusahaan / Universitas / Wirausaha
+              <input type="text" id="alamat-status" placeholder="Masukkan alamat perusahaan / universitas / wirausaha anda" required />
+            </label>
+
+            <button class="btn btn-primary kirim-form" type="submit">Kirim</button>
+
+            <p id="deskripsi-form">**Data yang telah disubmit tidak akan langsung muncul di laman data alumni, karena akan melalui proses moderasi terlebih dahulu.
+              Terima Kasih telah berpartisipasi.</p>
+        </form>
+    </div>
+</body>
+</html>
